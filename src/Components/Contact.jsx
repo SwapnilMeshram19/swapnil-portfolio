@@ -43,6 +43,7 @@ const Contact = () => {
             className="icons-container"
             href="https://mail.google.com/mail/?view=cm&to=swapnilm1908@gmail.com"
             target="_blank"
+            rel="noreferrer"
           >
             <EmailIcon className="icon" />
             <div className="icon-text"> Swapnilm1908@gmail.com</div>
@@ -53,16 +54,17 @@ const Contact = () => {
           </div>
 
           <div className="icon-container">
-            <a href="https://github.com/SwapnilMeshram19" target="_blank">
+            <a href="https://github.com/SwapnilMeshram19" target="_blank" rel="noreferrer">
               <GitHubIcon className="icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/swapnil-meshram-37a715167"
               target="_blank"
+              rel="noreferrer"
             >
               <LinkedInIcon className="icon" />
             </a>
-            <a href="https://twitter.com/swapnilm1908" target="_blank">
+            <a href="https://twitter.com/swapnilm1908" target="_blank" rel="noreferrer">
               <TwitterIcon className="icon" />
             </a>
           </div>
