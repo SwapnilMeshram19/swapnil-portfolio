@@ -1,0 +1,301 @@
+.App {
+  text-align: center;
+}
+
+/* HOME COMPONENTS */
+
+#home {
+  background-color: rgb(18, 17, 19);
+  padding: 100px 0px;
+}
+.profile-photo {
+  vertical-align: middle;
+  display: inline-block;
+  width: 25%;
+  border-radius: 100%;
+  margin: 30px;
+  border: 3px solid rgb(255, 173, 0);
+}
+
+.intro-text {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 90px;
+  margin-left: 30px;
+  text-align: left;
+}
+.intro-text > h5 {
+  margin: 0px;
+  font-size: 19px;
+  color: rgb(236, 236, 236);
+}
+
+.intro-text > h1 {
+  margin: 0px;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.intro-text > h4 {
+  margin: 0px;
+  font-size: 22px;
+  color: rgb(241, 238, 238);
+  letter-spacing: 1px;
+}
+
+.resume-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 20px 0px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: rgb(255, 173, 0);
+}
+.resume-button:hover {
+  background-color: rgb(25, 118, 210);
+}
+
+.profile-icon {
+  cursor: pointer;
+  margin: 0px 7px;
+}
+
+.profile-icon:hover {
+  color: rgb(255, 173, 0);
+}
+
+/* About Container */
+
+#about {
+  background-color: rgb(18, 17, 19);
+  padding: 200px 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#about > h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  width: 7%;
+  margin: auto;
+  color: rgb(25, 118, 210);
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgb(25, 118, 210);
+  font-weight: 900;
+}
+
+#about > h4 {
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#about > p {
+  margin: auto;
+  font-size: 20px;
+  width: 45%;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: white;
+}
+
+#about > h5 {
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#about > h5 > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#about > h5 > a:hover {
+  color: rgb(255, 173, 0);
+}
+
+/* SKILLS CONTAINER */
+
+#skills {
+  background-color: rgb(18, 17, 19);
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#skills > h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  width: 7%;
+  margin: auto;
+  color: rgb(25, 118, 210);
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgb(25, 118, 210);
+  font-weight: 900;
+}
+
+.skills {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  gap: 60px;
+  margin-top: 80px;
+  align-items: center;
+}
+.skills > div {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #afafaf, -2px -2px 5px #bcbcbc;
+  align-items: center;
+  align-content: center;
+  /* height: 120px; */
+}
+
+.skills > div:hover {
+  margin-top: -3px;
+}
+/* 
+.skills>div:nth-child(6){
+  margin-left: 20px;
+} */
+
+.skills > div > img {
+  width: 100%;
+  height: 110px;
+}
+
+.skills > div > h5 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Project-container */
+
+#projects {
+  background-color: rgb(18, 17, 19);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#projects > h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  width: 10%;
+  margin: auto;
+  color: rgb(25, 118, 210);
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgb(25, 118, 210);
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Contact Container */
+
+#contact {
+  background-color: rgb(18, 17, 19);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#contact > h1 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  width: 15%;
+  margin: auto;
+  color: rgb(25, 118, 210);
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgb(25, 118, 210);
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.contact-info{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.contact-info>.information{
+  display: inline-block;
+  width:40%;
+  vertical-align: middle;
+}
+.contact-info>.send-message{
+  display: inline-block;
+  width:50%;
+  vertical-align: middle;
+}
+
+.icons-container,
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.icons-container > .icon {
+  color: rgb(255, 173, 0);
+}
+
+.icons-container > .icon:hover {
+  color: aqua;
+}
+.icons-container > .icon-text {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.icon-container > a > .icon {
+  font-size: 30px;
+  color: rgb(255, 173, 0);
+}
+.icon-container > a > .icon:hover {
+  color: aqua;
+}
+
+.icon-container > a {
+  text-decoration: none;
+  margin-top: 20px;
+}
+/* .vr{
+  width:2px;
+  background-color: white;
+  height:350px;
+  display: inline-block;
+  vertical-align: top;
+} */
+
+.text-field{
+  width: 80%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 10px;
+}
+.text-field:focus{
+  border: none;
+}
+
+.send-button{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 20px 0px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: rgb(255, 173, 0);
+}
