@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import oneMg from  "./Images/oneMg.png"
+import {Card} from "@mui/material"
 
 
 const Projects = () => {
@@ -10,7 +12,14 @@ const Projects = () => {
 
       <div>
         <div className="project">
-         
+          <Card sx={{width:"30vw",height:"60vh",padding:"0.5vw"}} className="project-card">
+            <img src={oneMg}></img>
+            <div>
+              
+            </div>
+
+          </Card>
+          
         </div>
 
       </div>

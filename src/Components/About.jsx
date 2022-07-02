@@ -8,7 +8,7 @@ const About =()=>{
         position of a full stack web developer in a fast-paced tech
         environment to utilize technical skills to get experience in 
         developing customized software based on varying client demand</p>
-        <h5>Drop a mail @ <a href="https://mail.google.com/mail/?view=cm&to=swapnilm1908@gmail.com" target="_blank">swapnilm1908@gmail.com</a></h5>
+        <h5>Drop a mail @ <a href="https://mail.google.com/mail/?view=cm&to=swapnilm1908@gmail.com" target="_blank" rel="noreferrer">swapnilm1908@gmail.com</a></h5>
     </div>)
 }
 

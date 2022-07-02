@@ -6,42 +6,44 @@
 
 #home {
   background-color: rgb(18, 17, 19);
-  padding: 100px 0px;
+  padding: 18vh 0px;
 }
 .profile-photo {
   vertical-align: middle;
   display: inline-block;
-  width: 25%;
+  width: 26vw;
   border-radius: 100%;
-  margin: 30px;
+  margin: 0vh 3vw;
   border: 3px solid rgb(255, 173, 0);
 }
 
 .intro-text {
   vertical-align: top;
   display: inline-block;
-  margin-top: 90px;
-  margin-left: 30px;
+  margin-top: 12vh;
+  margin-left: 2vw;
   text-align: left;
 }
 .intro-text > h5 {
   margin: 0px;
-  font-size: 19px;
-  color: rgb(236, 236, 236);
+  font-size: 1.5vw;
+  color: rgb(233, 233, 233);
 }
 
 .intro-text > h1 {
   margin: 0px;
-  font-size: 45px;
+  font-size: 3.2vw;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 0.05vw;
+  margin-top: 2vh;
 }
 
 .intro-text > h4 {
   margin: 0px;
-  font-size: 22px;
+  font-size: 1.5vw;
   color: rgb(241, 238, 238);
-  letter-spacing: 1px;
+  letter-spacing: 0.05vw;
+  margin-top: 1vh;
 }
 
 .resume-button {
@@ -71,36 +73,37 @@
 
 #about {
   background-color: rgb(18, 17, 19);
-  padding: 200px 0px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding:12vw 0vh;
+
+  
 }
 
 #about > h1 {
   font-family: "League Spartan", sans-serif;
-  font-size: 40px;
-  width: 7%;
   margin: auto;
+  font-size: 2.5vw;
+  width: 6.8vw;
+  justify-content: center;
   color: rgb(25, 118, 210);
-  letter-spacing: 2px;
-  border-bottom: 4px solid rgb(25, 118, 210);
+  letter-spacing: 0.1vw;
+  border-bottom: 0.5vh solid rgb(25, 118, 210);
   font-weight: 900;
+  margin-bottom: 8vh;
 }
 
 #about > h4 {
   margin: 0px;
-  margin-top: 20px;
-  font-size: 25px;
+  font-size: 2vw;
   color: white;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  letter-spacing: 0.1vw;
+  margin-bottom: 4vh;
 }
 
 #about > p {
   margin: auto;
-  font-size: 20px;
-  width: 45%;
-  line-height: 22px;
+  font-size: 1.3vw;
+  width: 45vw;
+  line-height: 3.2vh;
   letter-spacing: 1.5px;
   font-weight: 500;
   color: white;
@@ -108,11 +111,11 @@
 
 #about > h5 {
   margin: 0px;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 6vh;
+  font-size: 1.4vw;
   color: white;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.05vw;
 }
 #about > h5 > a {
   text-decoration: none;
@@ -142,7 +145,11 @@
   font-weight: 900;
 }
 
-.skills {
+.skills-grid{
+
+}
+
+/* .skills {
   width: 70%;
   margin: auto;
   display: grid;
@@ -150,7 +157,8 @@
   gap: 60px;
   margin-top: 80px;
   align-items: center;
-}
+} */
+
 .skills > div {
   background-color: rgb(255, 255, 255);
   padding: 10px 20px;
@@ -158,28 +166,34 @@
   box-shadow: 2px 2px 5px #afafaf, -2px -2px 5px #bcbcbc;
   align-items: center;
   align-content: center;
-  /* height: 120px; */
 }
 
 .skills > div:hover {
   margin-top: -3px;
 }
-/* 
-.skills>div:nth-child(6){
-  margin-left: 20px;
-} */
 
-.skills > div > img {
+
+.skills-grid{
+  margin: auto;
+  display: flex;
+  gap: 4vw;
+  justify-content: center;
+  margin-top: 9vh;
+}
+.skills-card>img{
   width: 100%;
-  height: 110px;
+  height: 14vh;
 }
 
-.skills > div > h5 {
+.skills-card >h3 {
   margin: 0px;
+  text-align: center;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 800;
+  padding: 5px;
+  margin-top:1vh ;
+  
 }
-
 /* Project-container */
 
 #projects {
@@ -200,6 +214,13 @@
   text-align: center;
 }
 
+
+
+.project-card>img{
+  width:100%;
+  border: 1px solid rgb(25, 118, 210);
+  border-radius: 5px;
+}
 /* Contact Container */
 
 #contact {
