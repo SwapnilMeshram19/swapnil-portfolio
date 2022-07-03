@@ -1,5 +1,7 @@
+
 .App {
   text-align: center;
+  font-family:"League Spartan", sans-serif;
 }
 
 /* HOME COMPONENTS */
@@ -214,12 +216,43 @@
   text-align: center;
 }
 
-
+.project-card>h3{
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 0.6vh;
+  font-size: 1.6vw;
+  font-weight: 900;
+}
 
 .project-card>img{
   width:100%;
   border: 1px solid rgb(25, 118, 210);
   border-radius: 5px;
+}
+
+
+.about-project{
+  text-align: left;
+  font-size: 1.1vw;
+  padding: 0.5vw;
+  font-weight: 500;
+
+}
+.tech-stack{
+ display: flex;
+ gap: 0.5vw;
+ justify-content: left;
+ padding: 0.5vw;
+ margin-bottom: 0.5vh;
+
+}
+.button-div{
+  padding: 0px 20px;
+}
+.vl{
+  width:0.1vw;
+  height: 2vh;
+  background-color: rgb(77, 77, 77);
 }
 /* Contact Container */
 
