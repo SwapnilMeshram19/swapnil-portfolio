@@ -7,33 +7,33 @@ import ImageSlider from "./ImageSlider";
 
 const Projects = () => {
   const oneMgImages = [
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/1mg-images/img1.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/1mg-images/img2.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/1mg-images/img3.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/1mg-images/img4.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/1mg-images/img5.png?raw=true",
+    "images/1mg-images/img1.png",
+    "images/1mg-images/img2.png",
+    "images/1mg-images/img3.png",
+    "images/1mg-images/img4.png",
+    "images/1mg-images/img5.png",
   ];
 
   const bookmyshowImages = [
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img1.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img1.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img3.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img4.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img5.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img6.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img7.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img8.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/bookmyshow-images/img9.png?raw=true",
+    "images/bookmyshow-images/img1.png",
+    "images/bookmyshow-images/img2.png",
+    "images/bookmyshow-images/img3.png",
+    "images/bookmyshow-images/img4.png",
+    "images/bookmyshow-images/img5.png",
+    "images/bookmyshow-images/img6.png",
+    "images/bookmyshow-images/img7.png",
+    "images/bookmyshow-images/img8.png",
+    "images/bookmyshow-images/img9.png",
   ];
 
   const dineoutImages = [
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img1.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img2.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img3.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img4.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img5.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img5.png?raw=true",
-    "https://github.com/SwapnilMeshram19/swapnil-portfolio/blob/main/project-images/dineout-images/img7.png?raw=true",
+    "images/dineout-images/img1.png",
+    "images/dineout-images/img2.png",
+    "images/dineout-images/img3.png",
+    "images/dineout-images/img4.png",
+    "images/dineout-images/img5.png",
+    "images/dineout-images/img6.png",
+    "images/dineout-images/img7.png",
   ];
   return (
     <div id="projects">
@@ -41,7 +41,17 @@ const Projects = () => {
       <div>
         <div className="project">
           <Card
-            sx={{ width: "30vw", height: "452px", padding: "0.6vw 0px" }}
+            sx={{
+              width: "30vw",
+              height: "452px",
+              padding: "0.6vw 0px",
+              ["@media screen and (max-width:600px)"]: {
+                width: "80%",
+                margin: "auto",
+                height: "400px",
+                padding: "1vw 0px",
+              },
+            }}
             className="project-card"
           >
             <h3>Bookmyshow Clone</h3>
@@ -66,7 +76,6 @@ const Projects = () => {
                 sx={{
                   padding: "5px 30px",
                   fontSize: "0.9vw",
-
                   fontWeight: "700",
                   borderRadius: " 5px",
                   border: "2px solid rgb(151, 151, 151)",
@@ -75,6 +84,11 @@ const Projects = () => {
                   float: "left",
                   "&:hover": {
                     backgroundColor: "rgb(25, 118, 210)",
+                  },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
                   },
                 }}
               >
@@ -95,6 +109,11 @@ const Projects = () => {
                   "&:hover": {
                     backgroundColor: "rgb(25, 118, 210)",
                   },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
                 }}
               >
                 Code
@@ -103,7 +122,18 @@ const Projects = () => {
           </Card>
 
           <Card
-            sx={{ width: "30vw", height: "452px", padding: "0.6vw 0px" }}
+            sx={{
+              width: "30vw",
+              height: "452px",
+              padding: "0.6vw 0px",
+              ["@media screen and (max-width:600px)"]: {
+                width: "80%",
+                margin: "auto",
+                height: "400px",
+                padding: "1vw 0px",
+                marginTop:"5vh"
+              },
+            }}
             className="project-card"
           >
             <h3>1mg Clone</h3>
@@ -138,6 +168,11 @@ const Projects = () => {
                   "&:hover": {
                     backgroundColor: "rgb(25, 118, 210)",
                   },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
                 }}
               >
                 Demo
@@ -157,6 +192,11 @@ const Projects = () => {
                   "&:hover": {
                     backgroundColor: "rgb(25, 118, 210)",
                   },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
                 }}
               >
                 Code
@@ -166,7 +206,19 @@ const Projects = () => {
         </div>
         <div className="project-l2">
           <Card
-            sx={{ width: "30vw", height: "452px", padding: "0.6vw 0px" }}
+            sx={{
+              width: "30vw",
+              height: "452px",
+              padding: "0.6vw 0px",
+              ["@media screen and (max-width:600px)"]: {
+                width: "80%",
+                margin: "auto",
+                height: "400px",
+                padding: "1vw 0px",
+                marginTop:"5vh"
+
+              },
+            }}
             className="project-card"
           >
             <h3>Dineout Clone</h3>
@@ -201,6 +253,11 @@ const Projects = () => {
                   "&:hover": {
                     backgroundColor: "rgb(25, 118, 210)",
                   },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
                 }}
               >
                 Demo
@@ -219,6 +276,11 @@ const Projects = () => {
                   float: "right",
                   "&:hover": {
                     backgroundColor: "rgb(25, 118, 210)",
+                  },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
                   },
                 }}
               >

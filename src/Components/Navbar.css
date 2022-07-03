@@ -9,8 +9,9 @@
 }
 .links{
     float: right;
-    margin-top: 4px;
+    margin-top: 12px;
     margin-right: 50px;
+
 }
 
 .links>.nav-link{

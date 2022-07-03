@@ -17,8 +17,8 @@ const ImageSlider =({images})=>{
     
         timeout=setInterval(()=>{
             setCounter(counter=>counter+1);
-            if(imgCounter==images.length-1){
-                setCounter(0);
+            if(imgCounter==images.length-2){
+                setCounter(1);
             }
             
         },3000)
