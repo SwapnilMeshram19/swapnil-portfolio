@@ -21,13 +21,13 @@ const ImageSlider =({images})=>{
                 setCounter(0);
             }
             
-        },2500)
+        },3000)
     }
     
 
     return (
 
-            <img src={images[counter].original}/>
+            <img src={images[counter]}/>
 
 
             

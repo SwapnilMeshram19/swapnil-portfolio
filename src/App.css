@@ -215,7 +215,19 @@
   font-weight: 900;
   text-align: center;
 }
-
+.project{
+  width:70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  margin-top: 12vh;
+}
+.project-l2{
+  padding: 10vh;
+  width:30%;
+  margin: auto;
+}
 .project-card>h3{
   text-align: center;
   margin: 0px;
@@ -226,6 +238,7 @@
 
 .project-card>img{
   width:100%;
+  height: 61%;
   border: 1px solid rgb(25, 118, 210);
   border-radius: 5px;
 }
@@ -233,16 +246,18 @@
 
 .about-project{
   text-align: left;
-  font-size: 1.1vw;
-  padding: 0.5vw;
+  font-size: 1.2vw;
+  padding: 0.6vw;
   font-weight: 500;
+
 
 }
 .tech-stack{
  display: flex;
+ font-size: 1.2vw;
  gap: 0.5vw;
  justify-content: left;
- padding: 0.5vw;
+ padding: 0.6vw;
  margin-bottom: 0.5vh;
 
 }
