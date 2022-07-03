@@ -1,11 +1,13 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import MenuDrawer from "./MenuDrawer";
 
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
+      
       <div className="links">
         <Link className="nav-link" to="home" spy={true} smooth={true}>
           Home
@@ -22,6 +24,7 @@ const Navbar = () => {
         <Link className="nav-link" to="contact" spy={true} smooth={true}>
           Contact
         </Link>
+        <MenuDrawer/>
       </div>
     </div>
   );

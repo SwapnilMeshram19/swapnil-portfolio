@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import MenuDrawer from "./Components/MenuDrawer";
 
 function App() {
   return (
