@@ -31,31 +31,31 @@ const MenuDrawer =()=>{
             <ChevronLeftIcon sx={{fontSize:"30px",color:"white"}} onClick={toggleDrawer} />
         </div><br/>
         <div className='drawer-div'>
-        <Link  to="home" spy={true} smooth={true} className="drawer-link" sx={{marginTop:"20px"}}>Home
+        <Link  to="home" spy={true} smooth={true} className="drawer-link" sx={{marginTop:"20px"}}onClick={toggleDrawer}>Home
         </Link>
 
         </div>
        <br/>
        <div className='drawer-div'>
-       <Link className="drawer-link" to="about" spy={true} smooth={true}>
+       <Link className="drawer-link" to="about" spy={true} smooth={true} onClick={toggleDrawer}>
           About
         </Link>
 
        </div><br/>
        <div className='drawer-div'>
-       <Link className="drawer-link" to="skills" spy={true} smooth={true}>
+       <Link className="drawer-link" to="skills" spy={true} smooth={true} onClick={toggleDrawer}>
           Skills
         </Link>
 
        </div><br/>
        <div className='drawer-div'>
-       <Link className="drawer-link" to="projects" spy={true} smooth={true}>
+       <Link className="drawer-link" to="projects" spy={true} smooth={true} onClick={toggleDrawer}>
           Projects
         </Link>
 
        </div><br/>
        <div className='drawer-div'>
-       <Link className="drawer-link" to="contact" spy={true} smooth={true}>
+       <Link className="drawer-link" to="contact" spy={true} smooth={true} onClick={toggleDrawer}>
           Contact
         </Link>
 

@@ -57,9 +57,10 @@ const Projects = () => {
             <h3>Bookmyshow Clone</h3>
             <ImageSlider images={bookmyshowImages} />
             <div className="about-project">
-              1mg, is a healthcare platform based in Gurgaon, India. It provides
-              services, including e-pharmacy, diagnostics, e-consultation and
-              health content.
+            Book advance movie tickets, cinema tickets, sports & cricket
+              tickets. Get movie show times, buy merchandise, concert tickets &
+              play tickets.
+              
             </div>
             <div className="tech-stack">
               <div>Tech Stack : </div>
@@ -68,6 +69,8 @@ const Projects = () => {
               <div>CSS</div>
               <div className="vl"></div>
               <div>JavaScript</div>
+              <div className="vl"></div>
+              <div>React</div>
             </div>
             <div className="button-div">
               <Button
@@ -90,6 +93,11 @@ const Projects = () => {
                     fontSize: "3.2vw",
                     padding: "3px 20px",
                   },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://bookmyshow-cloned.netlify.app/"
+                  );
                 }}
               >
                 Demo
@@ -114,6 +122,11 @@ const Projects = () => {
                     fontSize: "3.2vw",
                     padding: "3px 20px",
                   },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://github.com/SwapnilMeshram19/bookmyshow-clone.git"
+                  );
                 }}
               >
                 Code
@@ -139,9 +152,9 @@ const Projects = () => {
             <h3>1mg Clone</h3>
             <ImageSlider images={oneMgImages} />
             <div className="about-project">
-              Book advance movie tickets, cinema tickets, sports & cricket
-              tickets. Get movie show times, buy merchandise, concert tickets &
-              play tickets.
+            1mg, is a healthcare platform. It provides
+              services, including e-pharmacy, diagnostics, e-consultation and
+              health content.
             </div>
             <div className="tech-stack">
               <div>Tech Stack : </div>
@@ -174,6 +187,11 @@ const Projects = () => {
                     padding: "3px 20px",
                   },
                 }}
+                onClick={(event) => {
+                  window.open(
+                    "https://1mg-cloned.netlify.app/"
+                  );
+                }}
               >
                 Demo
               </Button>
@@ -197,6 +215,11 @@ const Projects = () => {
                     fontSize: "3.2vw",
                     padding: "3px 20px",
                   },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://github.com/SwapnilMeshram19/1mg.git"
+                  );
                 }}
               >
                 Code
@@ -259,6 +282,11 @@ const Projects = () => {
                     padding: "3px 20px",
                   },
                 }}
+                onClick={(event) => {
+                  window.open(
+                    "https://dineout-cloned.netlify.app/"
+                  );
+                }}
               >
                 Demo
               </Button>
@@ -282,6 +310,11 @@ const Projects = () => {
                     fontSize: "3.2vw",
                     padding: "3px 20px",
                   },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://github.com/SwapnilMeshram19/Dineout-Clone.git"
+                  );
                 }}
               >
                 Code

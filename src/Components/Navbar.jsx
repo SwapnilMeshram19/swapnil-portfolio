@@ -2,11 +2,13 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import MenuDrawer from "./MenuDrawer";
-
+import SamLogo from "../sam-logo.png"
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
+
+      <img src={SamLogo}/>
       
       <div className="links">
         <Link className="nav-link" to="home" spy={true} smooth={true}>
