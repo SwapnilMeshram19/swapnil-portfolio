@@ -14,31 +14,34 @@ const Skills = () => {
     <div id="skills">
       <h1>Skills</h1>
       <Box
-        sx={{ flexGrow: 1, width: "62%", margin: "auto", marginTop: "100px",
-        ['@media screen and (max-width:600px)']:{
-          width:"80%",
-          margin:"auto"
-
-        }
-       }}
+        sx={{
+          flexGrow: 1,
+          width: "62%",
+          margin: "auto",
+          marginTop: "100px",
+          ["@media screen and (max-width:600px)"]: {
+            width: "80%",
+            margin: "auto",
+          },
+        }}
       >
-        <Grid container rowSpacing={{xs:5, sm:5, md:6}} columnSpacing={{ xs:5, sm: 10, md: 25 }}
+        <Grid
+          container
+          rowSpacing={{ xs: 5, sm: 5, md: 6 }}
+          columnSpacing={{ xs: 5, sm: 10, md: 25 }}
         >
-          <Grid item xs={6} md={1} sm={6} 
-          sx={{
-
-            
-          }}>
+          <Grid item xs={6} md={1} sm={6} sx={{}}>
             <div className="grid1">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw" ,
-              
-                ['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                }
-              }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={htmlLogo} alt="" />
@@ -48,12 +51,14 @@ const Skills = () => {
           </Grid>
           <Grid item xs={6} md={1} sm={6}>
             <Card
-              sx={{ width: "6vw", padding: "0.8vh 1.2vw",
-              ['@media screen and (max-width:600px)']:{
-                width:"30vw",
-                padding:"1vh 1.5vw"
-      
-              } }}
+              sx={{
+                width: "6vw",
+                padding: "0.8vh 1.2vw",
+                ["@media screen and (max-width:600px)"]: {
+                  width: "30vw",
+                  padding: "1vh 1.5vw",
+                },
+              }}
               className="skills-card"
             >
               <img src={cssLogo} alt="" />
@@ -64,11 +69,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid2">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw", ['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={jsLogo} alt="" />
@@ -79,11 +87,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid3">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw", ['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={reactLogo} alt="" />
@@ -94,11 +105,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid3">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw",['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={reduxLogo} alt="" />
@@ -109,11 +123,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid6">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw",['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={nodejsLogo} alt="" />
@@ -124,11 +141,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid6">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw",['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={expressjsLogo} alt="" />
@@ -139,11 +159,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid6">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw",['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={mysqlLogo} alt="" />
@@ -154,11 +177,14 @@ const Skills = () => {
           <Grid item xs={6} md={1} sm={6}>
             <div className="grid6 grid-last">
               <Card
-                sx={{ width: "6vw", padding: "0.8vh 1.2vw",['@media screen and (max-width:600px)']:{
-                  width:"30vw",
-                  padding:"1vh 1.5vw"
-        
-                } }}
+                sx={{
+                  width: "6vw",
+                  padding: "0.8vh 1.2vw",
+                  ["@media screen and (max-width:600px)"]: {
+                    width: "30vw",
+                    padding: "1vh 1.5vw",
+                  },
+                }}
                 className="skills-card"
               >
                 <img src={javaLogo} alt="" />

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 
 let imgCounter=0;
 let timeout=null;
-const ImageSlider =({images})=>{
+const ImageSliderBookMyShow =({images})=>{
     const [counter,setCounter]=useState(0);
 
     useEffect(()=>{
+        startInterval();
        
-            startInterval();
             return ()=>clearInterval(timeout)
 
     },[])
@@ -17,8 +17,8 @@ const ImageSlider =({images})=>{
     
         timeout=setInterval(()=>{
             setCounter(counter=>counter+1);
-            if(imgCounter==images.length-2){
-                setCounter(1);
+            if(imgCounter===images.length-1){
+                setCounter(0);
             }
             
         },3000)
@@ -27,7 +27,7 @@ const ImageSlider =({images})=>{
 
     return (
 
-            <img src={images[counter]}/>
+            <img src={images[counter]} alt=""/>
 
 
             
@@ -36,4 +36,4 @@ const ImageSlider =({images})=>{
 
 }
 
-export default ImageSlider;
+export default ImageSliderBookMyShow;

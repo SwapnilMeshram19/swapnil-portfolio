@@ -2,7 +2,9 @@ import React from "react";
 import { Card, Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
-import ImageSlider from "./ImageSlider";
+import ImageSliderBookMyShow from "./ImageSliderBookMyShow";
+import ImageSliderOneMg from "./ImageSliderOneMg";
+import ImageSliderDinout from "./ImageSliderDineout";
 
 const Projects = () => {
   const oneMgImages = [
@@ -54,7 +56,7 @@ const Projects = () => {
             className="project-card"
           >
             <h3>Bookmyshow Clone</h3>
-            <ImageSlider images={bookmyshowImages} />
+            <ImageSliderBookMyShow images={bookmyshowImages} />
             <div className="about-project">
             Book advance movie tickets, cinema tickets, sports & cricket
               tickets. Get movie show times, buy merchandise, concert tickets &
@@ -149,7 +151,7 @@ const Projects = () => {
             className="project-card"
           >
             <h3>1mg Clone</h3>
-            <ImageSlider images={oneMgImages} />
+            <ImageSliderOneMg images={oneMgImages} />
             <div className="about-project">
             1mg, is a healthcare platform. It provides
               services, including e-pharmacy, diagnostics, e-consultation and
@@ -244,7 +246,7 @@ const Projects = () => {
             className="project-card"
           >
             <h3>Dineout Clone</h3>
-            <ImageSlider images={dineoutImages} />
+            <ImageSliderDinout images={dineoutImages} />
             <div className="about-project">
               Dineout is a table booking platform helping customers to do table
               booking in their favourite restaurants for free and help them get
