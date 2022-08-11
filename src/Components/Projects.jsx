@@ -36,11 +36,25 @@ const Projects = () => {
     "images/dineout-images/img6.png",
     "images/dineout-images/img7.png",
   ];
+  const imdbImages=[
+    "images/imdb-images/img1.png",
+    "images/imdb-images/img2.png",
+    "images/imdb-images/img3.png",
+    "images/imdb-images/img4.png",
+    "images/imdb-images/img5.png",
+    "images/imdb-images/img6.png",
+    "images/imdb-images/img7.png",
+    "images/imdb-images/img8.png",
+    "images/imdb-images/img9.png",
+    "images/imdb-images/img10.png",
+    "images/imdb-images/img11.png",
+    "images/imdb-images/img12.png",
+  ]
   return (
     <div id="projects">
       <h1>Projects</h1>
       <div>
-        <div className="project">
+      <div className="project">
           <Card
             sx={{
               width: "30vw",
@@ -50,17 +64,16 @@ const Projects = () => {
                 width: "80%",
                 margin: "auto",
                 height: "400px",
+                maxHeight:"452px",
                 padding: "1vw 0px",
               },
             }}
             className="project-card"
           >
-            <h3>Bookmyshow Clone</h3>
-            <ImageSliderBookMyShow images={bookmyshowImages} />
+            <h3>IMDb Clone</h3>
+            <ImageSliderBookMyShow images={imdbImages} />
             <div className="about-project">
-            Book advance movie tickets, cinema tickets, sports & cricket
-              tickets. Get movie show times, buy merchandise, concert tickets &
-              play tickets.
+            IMDb is an online database of information related to films, television series, home videos, video games, and streaming content online
               
             </div>
             <div className="tech-stack">
@@ -71,7 +84,9 @@ const Projects = () => {
               <div className="vl"></div>
               <div>JavaScript</div>
               <div className="vl"></div>
-              <div>React</div>
+              <div>React JS</div>
+              <div className="vl"></div>
+              <div>Redux</div>
             </div>
             <div className="button-div">
               <Button
@@ -136,6 +151,104 @@ const Projects = () => {
           </Card>
 
           <Card
+            sx={{
+              width: "30vw",
+              height: "452px",
+              padding: "0.6vw 0px",
+              ["@media screen and (max-width:600px)"]: {
+                width: "80%",
+                margin: "auto",
+                height: "400px",
+                maxHeight:"452px",
+                padding: "1vw 0px",
+              },
+            }}
+            className="project-card"
+          >
+            <h3>Bookmyshow Clone</h3>
+            <ImageSliderBookMyShow images={bookmyshowImages} />
+            <div className="about-project">
+            Book advance movie tickets, cinema tickets, sports & cricket
+              tickets. Get movie show times, buy merchandise, concert tickets &
+              play tickets.
+              
+            </div>
+            <div className="tech-stack">
+              <div>Tech Stack : </div>
+              <div>HTML</div>
+              <div className="vl"></div>
+              <div>CSS</div>
+              <div className="vl"></div>
+              <div>JavaScript</div>
+              <div className="vl"></div>
+              <div>React JS</div>
+              <div className="vl"></div>
+              <div>Redux</div>
+            </div>
+            <div className="button-div">
+              <Button
+                variant="contained"
+                startIcon={<LinkIcon />}
+                sx={{
+                  padding: "5px 30px",
+                  fontSize: "0.9vw",
+                  fontWeight: "700",
+                  borderRadius: " 5px",
+                  border: "2px solid rgb(151, 151, 151)",
+                  cursor: "pointer",
+                  backgroundColor: " rgb(255, 173, 0)",
+                  float: "left",
+                  "&:hover": {
+                    backgroundColor: "rgb(25, 118, 210)",
+                  },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://62f1166bb465cf7b970869f9--imdbclone-masai.netlify.app/"
+                  );
+                }}
+              >
+                Demo
+              </Button>
+              <Button
+                variant="contained"
+                startIcon={<GitHubIcon />}
+                sx={{
+                  padding: "5px 30px",
+                  fontSize: "0.9vw",
+                  fontWeight: "700",
+                  borderRadius: " 5px",
+                  border: "2px solid rgb(151, 151, 151)",
+                  cursor: "pointer",
+                  backgroundColor: " rgb(255, 173, 0)",
+                  float: "right",
+                  "&:hover": {
+                    backgroundColor: "rgb(25, 118, 210)",
+                  },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://github.com/SwapnilMeshram19/imdbclone.git"
+                  );
+                }}
+              >
+                Code
+              </Button>
+            </div>
+          </Card>
+        </div>
+        <div className="project">
+        <Card
             sx={{
               width: "30vw",
               height: "452px",
@@ -227,8 +340,7 @@ const Projects = () => {
               </Button>
             </div>
           </Card>
-        </div>
-        <div className="project-l2">
+
           <Card
             sx={{
               width: "30vw",
@@ -240,7 +352,6 @@ const Projects = () => {
                 height: "400px",
                 padding: "1vw 0px",
                 marginTop:"5vh"
-
               },
             }}
             className="project-card"
@@ -323,6 +434,100 @@ const Projects = () => {
             </div>
           </Card>
         </div>
+        {/* <div className="project-l2">
+          <Card
+            sx={{
+              width: "30vw",
+              height: "452px",
+              padding: "0.6vw 0px",
+              ["@media screen and (max-width:600px)"]: {
+                width: "80%",
+                margin: "auto",
+                height: "400px",
+                padding: "1vw 0px",
+                marginTop:"5vh"
+              },
+            }}
+            className="project-card"
+          >
+            <h3>Dineout Clone</h3>
+            <ImageSliderDinout images={dineoutImages} />
+            <div className="about-project">
+              Dineout is a table booking platform helping customers to do table
+              booking in their favourite restaurants for free and help them get
+              great discounts.
+            </div>
+            <div className="tech-stack">
+              <div>Tech Stack : </div>
+              <div>HTML</div>
+              <div className="vl"></div>
+              <div>CSS</div>
+              <div className="vl"></div>
+              <div>JavaScript</div>
+            </div>
+            <div className="button-div">
+              <Button
+                variant="contained"
+                startIcon={<LinkIcon />}
+                sx={{
+                  padding: "5px 30px",
+                  fontSize: "0.9vw",
+
+                  fontWeight: "700",
+                  borderRadius: " 5px",
+                  border: "2px solid rgb(151, 151, 151)",
+                  cursor: "pointer",
+                  backgroundColor: " rgb(255, 173, 0)",
+                  float: "left",
+                  "&:hover": {
+                    backgroundColor: "rgb(25, 118, 210)",
+                  },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://dineout-cloned.netlify.app/"
+                  );
+                }}
+              >
+                Demo
+              </Button>
+              <Button
+                variant="contained"
+                startIcon={<GitHubIcon />}
+                sx={{
+                  padding: "5px 30px",
+                  fontSize: "0.9vw",
+                  fontWeight: "700",
+                  borderRadius: " 5px",
+                  border: "2px solid rgb(151, 151, 151)",
+                  cursor: "pointer",
+                  backgroundColor: " rgb(255, 173, 0)",
+                  float: "right",
+                  "&:hover": {
+                    backgroundColor: "rgb(25, 118, 210)",
+                  },
+
+                  ["@media screen and (max-width:600px)"]: {
+                    fontSize: "3.2vw",
+                    padding: "3px 20px",
+                  },
+                }}
+                onClick={(event) => {
+                  window.open(
+                    "https://github.com/SwapnilMeshram19/Dineout-Clone.git"
+                  );
+                }}
+              >
+                Code
+              </Button>
+            </div>
+          </Card>
+        </div> */}
       </div>
     </div>
   );
