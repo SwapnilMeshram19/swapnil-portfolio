@@ -7,10 +7,12 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import MenuDrawer from "./Components/MenuDrawer";
 
+
 function App() {
   return (
     <div className="App">
       <Navbar />
+  
       <Home />
       <About />
       <Skills />
