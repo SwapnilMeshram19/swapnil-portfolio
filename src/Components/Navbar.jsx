@@ -7,7 +7,7 @@ import SamLogo from "../sam-logo.png"
 const Navbar = () => {
   return (
     <div className="navbar-container">
-      <Link to="home" spy={true} smooth={true}><img src={SamLogo} style={{cursor:"pointer"}}/></Link>
+      <Link to="home" spy={true} smooth={true}><img src={SamLogo} class="sam-logo" style={{cursor:"pointer"}}/></Link>
       
       <div className="links">
         <Link className="nav-link" to="home" spy={true} smooth={true}>
