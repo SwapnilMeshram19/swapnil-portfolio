@@ -1,16 +1,15 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
-import ImageSliderBookMyShow from "./ImageSliderBookMyShow";
-import ImageSliderOneMg from "./ImageSliderOneMg";
-import ImageSliderDinout from "./ImageSliderDineout";
+// import ImageSliderBookMyShow from "./ImageSliderBookMyShow";
+// import ImageSliderOneMg from "./ImageSliderOneMg";
+// import ImageSliderDinout from "./ImageSliderDineout";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
-import SimpleImageSlider from "react-simple-image-slider";
 import { Box, Button, CardMedia, Divider, Card } from "@mui/material";
-import ReactImageGallery from "react-image-gallery";
+// import ReactImageGallery from "react-image-gallery";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -44,6 +43,25 @@ const Projects = () => {
     "images/bookmyshow-images/img7.png",
     "images/bookmyshow-images/img8.png",
     "images/bookmyshow-images/img9.png",
+  ];
+  const cultFitImages = [
+    "images/cultfit-images/img1.png",
+    "images/cultfit-images/img2.png",
+    "images/cultfit-images/img3.png",
+    "images/cultfit-images/img4.png",
+    "images/cultfit-images/img5.png",
+    "images/cultfit-images/img6.png",
+    "images/cultfit-images/img7.png",
+    "images/cultfit-images/img8.png",
+    "images/cultfit-images/img9.png",
+    "images/cultfit-images/img10.png",
+    "images/cultfit-images/img11.png",
+    "images/cultfit-images/img12.png",
+    "images/cultfit-images/img13.png",
+    "images/cultfit-images/img14.png",
+    "images/cultfit-images/img15.png",
+    "images/cultfit-images/img16.png",
+    "images/cultfit-images/img17.png",
   ];
 
   const dineoutImages = [

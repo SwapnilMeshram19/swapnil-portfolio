@@ -8,15 +8,137 @@ import nodejsLogo from "./Images/nodejs.png";
 import expressjsLogo from "./Images/expressjs.svg";
 import mysqlLogo from "./Images/mysql.svg";
 import javaLogo from "./Images/java.svg";
+import mongoDB from "./Images/MongoDB.png"
 import { Box, Card, Grid } from "@mui/material";
+import Slider from "react-slick";
+
+const skillsData=[
+  {
+    image:"images/logos/html.png",
+    title:"HTML"
+  },
+  {
+    image:"images/logos/css.png",
+    title:"CSS"
+  },
+  {
+    image:"images/logos/js.png",
+    title:"JavaScript"
+  },
+  {
+    image:"images/logos/react.png",
+    title:"React.js"
+  },
+  {
+    image:"images/logos/redux.svg",
+    title:"Redux.js"
+  },
+  {
+    image:"images/logos/nodejs.png",
+    title:"Node.js"
+  },
+  {
+    image:"images/logos/expressjs.svg",
+    title:"Express.js"
+  },
+  {
+    image:"images/logos/MongoDB.png",
+    title:"MongoDB"
+  }
+]
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
+
 const Skills = () => {
+  const settings = {
+    className:'slider',
+    dots: false,
+    infinite: true,
+    lazyLoad: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    // swipeToSlide: false,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    pauseOnHover: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+
+  };
   return (
     <div id="skills">
       <h1>Skills</h1>
+
+      <div style={{width:"85%", margin:"auto", border:"solid white 2px", marginTop:"80px"}}>
+      <Slider {...settings}>
+              {skillsData.map((ele) => (
+                <div >
+   <Card
+                sx={{
+                  margin:"20px",
+                  padding:"0.5rem 1.5rem",
+                  
+                  marginLeft:"10px"
+                }}
+                className="skills-card"
+              >
+                <img src={ele.image} alt={ele.title} />
+                <h3>{ele.title}</h3>
+              </Card>
+                </div>
+             
+              ))}
+            </Slider>
+      </div>
+{/*      
       <Box
         sx={{
           flexGrow: 1,
-          width: "62%",
+          width: "50%",
           margin: "auto",
           marginTop: "100px",
           ["@media screen and (max-width:600px)"]: {
@@ -27,11 +149,11 @@ const Skills = () => {
       >
         <Grid
           container
-          rowSpacing={{ xs: 5, sm: 5, md: 6 }}
-          columnSpacing={{ xs: 5, sm: 10, md: 25 }}
+          rowSpacing={{ xs: 10, sm: 5, md: 6 }}
+          columnSpacing={{ xs: 5, sm: 5, md: 25 }}
         >
-          <Grid item xs={6} md={1} sm={6} sx={{}}>
-            <div className="grid1">
+          <Grid item xs={3} md={1} sm={12} sx={{}}>
+            
               <Card
                 sx={{
                   width: "6vw",
@@ -47,9 +169,9 @@ const Skills = () => {
                 <img src={htmlLogo} alt="" />
                 <h3>HTML</h3>
               </Card>
-            </div>
+            
           </Grid>
-          <Grid item xs={6} md={1} sm={6}>
+          <Grid item xs={3} md={1} sm={12}>
             <Card
               sx={{
                 width: "6vw",
@@ -66,8 +188,8 @@ const Skills = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid2">
+          <Grid item xs={3} md={1} sm={12}>
+          
               <Card
                 sx={{
                   width: "6vw",
@@ -82,10 +204,10 @@ const Skills = () => {
                 <img src={jsLogo} alt="" />
                 <h3>JavaScript</h3>
               </Card>
-            </div>
+        
           </Grid>
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid3">
+          <Grid item xs={3} md={1} sm={12}>
+          
               <Card
                 sx={{
                   width: "6vw",
@@ -100,10 +222,10 @@ const Skills = () => {
                 <img src={reactLogo} alt="" />
                 <h3>React.js</h3>
               </Card>
-            </div>
+          
           </Grid>
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid3">
+          <Grid item xs={3} md={1} sm={12}>
+            
               <Card
                 sx={{
                   width: "6vw",
@@ -118,10 +240,10 @@ const Skills = () => {
                 <img src={reduxLogo} alt="" />
                 <h3>Redux.js</h3>
               </Card>
-            </div>
+            
           </Grid>
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid6">
+          <Grid item xs={3} md={1} sm={12}>
+          
               <Card
                 sx={{
                   width: "6vw",
@@ -136,10 +258,10 @@ const Skills = () => {
                 <img src={nodejsLogo} alt="" />
                 <h3>Node.js</h3>
               </Card>
-            </div>
+            
           </Grid>
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid6">
+          <Grid item xs={3} md={1} sm={12}>
+            
               <Card
                 sx={{
                   width: "6vw",
@@ -154,10 +276,11 @@ const Skills = () => {
                 <img src={expressjsLogo} alt="" />
                 <h3>Express.js</h3>
               </Card>
-            </div>
+              
           </Grid>
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid6">
+         
+          <Grid item xs={3} md={1} sm={12}>
+            
               <Card
                 sx={{
                   width: "6vw",
@@ -169,31 +292,13 @@ const Skills = () => {
                 }}
                 className="skills-card"
               >
-                <img src={mysqlLogo} alt="" />
-                <h3>MySql</h3>
+                <img src={mongoDB} alt=""  style={{width:"100%", height:"50px", margin:"22px 0px"}}/>
+                <h3>MongoDB</h3>
               </Card>
-            </div>
-          </Grid>
-          <Grid item xs={6} md={1} sm={6}>
-            <div className="grid6 grid-last">
-              <Card
-                sx={{
-                  width: "6vw",
-                  padding: "0.8vh 1.2vw",
-                  ["@media screen and (max-width:600px)"]: {
-                    width: "30vw",
-                    padding: "1vh 1.5vw",
-                  },
-                }}
-                className="skills-card"
-              >
-                <img src={javaLogo} alt="" />
-                <h3>Java</h3>
-              </Card>
-            </div>
+        
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
       {/* 
       <div className="skills-grid">
         <Card

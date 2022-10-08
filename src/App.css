@@ -276,22 +276,29 @@
 } */
 .skills-card>img{
   width: 100%;
-  height: 14vh;
+  height: 7rem;
+}
+.slider{
+  
+  padding:50px;
 }
 
+/* .skills-card{
+  background-color:white;
+  margin:5px;
+} */
 
-.skills-card >h3 {
+
+/* .skills-card >h3 {
   margin: 0px;
   text-align: center;
   font-size: 18px;
   font-weight: 800;
   padding: 5px;
   margin-top:1vh ;
-}
+} */
 
-.grid6{
-  padding:0px 70px;
-}
+
 
 @media screen and (max-width:600px){
 
@@ -308,12 +315,8 @@
     margin-bottom: 8vh;
   }
 
-  .grid6{
-    padding:0px 0px;
-  }
-  .grid-last{
-    padding-left:60%;
-  }
+
+
 
 }
 /* Project-container */
