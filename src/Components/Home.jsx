@@ -29,7 +29,7 @@ const Home = () => {
           className="resume-button"
           onClick={(event) => {
             window.open(
-              "https://drive.google.com/file/d/1PvY2GjWNavb-9hz3MK4C51vM9ZAgZ2MI/view?usp=sharing"
+              "https://drive.google.com/drive/folders/1RiKZZlL_O6ow_4ZhTV-aWdYEQS7dARYr?usp=share_link"
             );
           }}
         >
